@@ -1,4 +1,15 @@
 /* RESET */
+@font-face {
+    font-family: Norse;
+    src: url(assets/Norse-Bold.otf);
+}
+
+.roboto-slab-font {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -23,12 +34,17 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+div{
+    display: flex;
+}
+
 body{
     display: flex;
     flex-direction: row;
     min-height: 100vh;
     max-height: 100vh;
     width: 100vw;
+    font-family: "Roboto Slab", sans-serif;
 }
 
 .left{
@@ -36,6 +52,43 @@ body{
     flex: 0 0 35%;
     height: 100vh;
     overflow: hidden;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+
+#band{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    overflow: hidden;
+}
+
+#band img,
+#band h1{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    object-fit: contain;
+    flex: 1;
+}
+#band img{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+#band h1{
+    color: white;
+    flex: 1;
+    font-family: Norse, sans-serif;
+    text-align: center;
 }
 
 .left img{
@@ -53,5 +106,46 @@ body{
     flex: 0 0 65%;
     justify-content: center;
     align-items: center;
+}
 
+.right > * {
+    /* margin: 5px; */
+    margin-top: 10px;
+}
+
+.description,
+.information,
+.account {
+    flex: 1;
+    padding-left: 5vw;
+}
+
+.description{
+    
+}
+
+.information{
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.account {
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+fieldset{
+    border: none;
+    max-width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.information {
+    background-color: rgb(235, 235, 235);
 }

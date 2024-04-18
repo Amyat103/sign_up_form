@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css"/>
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="left">
         <img alt="galaxy-background" src="assets/vincentiu-solomon-ln5drpv_ImI-unsplash.png">
+        <div id="band">
+            <img alt="odin-logo" src="assets/odin-lined.png">
+            <h1>ODIN</h1>
+        </div>
     </div>
     <div class="right">
         <div class="description">
@@ -16,11 +24,29 @@
         </div>
         <div class="information">
             <h4>Let's do this!</h4>
-            <label for="first_name">FIRST NAME</label>
-            <input type="text" id="first_name" placeholder="Dav">
+            <div class="forms">
+                <fieldset>
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" placeholder="Dav">
+                    <label for="email">EMAIL:</label>
+                    <input type="text" name="email" id="email" placeholder="example@test.com">
+                    <label for="password">PASSWORD:</label>
+                    <input type="password" name="password" id="password">
+                </fieldset>
+                <fieldset>
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" name="" id="last_name" placeholder="zho">
+                    <label for="phone">PHONE NUMBER:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="111-111-1111">
+                    <label for="com_pass">COMFIRM PASSWORD:</label>
+                    <input type="com_pass" name="com_pass" id="com_pass">
+                </fieldset>
+            </div>
+            
         </div>
         <div class="account">
-
+            <button>Create Account</button>
+            <p>Already have an account?<strong>Log in</strong></p>
         </div>
     </div>
 </body>
