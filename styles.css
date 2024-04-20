@@ -100,6 +100,10 @@ body{
     margin: auto; */
 }
 
+h4{
+    font-size: 22px;
+}
+
 .right{
     display: flex;
     flex-direction: column;
@@ -110,7 +114,7 @@ body{
 
 .right > * {
     /* margin: 5px; */
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .description,
@@ -118,10 +122,14 @@ body{
 .account {
     flex: 1;
     padding-left: 5vw;
+    width: 100%;
 }
 
 .description{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
 }
 
 .information{
@@ -135,6 +143,7 @@ body{
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    font-size: 18px;
 }
 
 fieldset{
@@ -143,9 +152,42 @@ fieldset{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 50px;
+}
 
+fieldset > *{
+    font-size: 13px;
+}
+
+fieldset > label{
+    margin-top: 10px;
 }
 
 .information {
     background-color: rgb(235, 235, 235);
+}
+
+button {
+    padding: 5px 50px;
+    border-radius: 10px;
+    background-color: rgb(198, 13, 198);
+}
+
+strong{
+    color: rgb(198, 13, 198);
+}
+
+input {
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
 }
